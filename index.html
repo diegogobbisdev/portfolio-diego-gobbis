@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Gobbis - Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Canvas para efeito de fundo -->
+    <canvas id="neural-network"></canvas>
+    
+    <!-- Cursor customizado -->
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-logo">DG</a>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#certificados" class="nav-link">Certificados</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Pagina Inicial -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">👋 Olá, eu sou</p>
+                    <h1 class="hero-name">
+                        <span class="typing-text">Diego Gobbis</span>
+                    </h1>
+                    <h2 class="hero-title">Desenvolvedor Full Stack</h2>
+                    <p class="hero-description">
+                        Especializado em criar experiências digitais excepcionais que combinam 
+                        design elegante com código limpo e performance otimizada.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projetos" class="btn btn-primary">✨ Ver Projetos</a>
+                        <a href="#contato" class="btn btn-secondary">Entrar em Contato</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/diegogobbisdev" target="_blank" class="social-link" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/diegogobbis/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                   <!--     <a href="diegogobbisdev@gmail.com" class="social-link" aria-label="Email">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-09-01%20at%2015.55.06-k9fLbH2ggm98lwnx18LaNqIIEyzUrU.jpg" alt="Diego Gobbis" class="profile-img">
+                        <div class="tech-badge badge-1">JavaScript</div>
+                        <div class="tech-badge badge-2">Html</div>
+                        <div class="tech-badge badge-3">Css</div>
+                        <div class="tech-badge badge-4">APIs</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                      Sou um desenvolvedor apaixonado por transformar ideias complexas em soluções digitais elegantes e funcionais,
+                      com foco inicial nos fundamentos da web (HTML, CSS e JavaScript).
+                      Atualmente sou estudante de Sistemas de Informação na UEMG e desenvolvedor em constante evolução. Minha jornada é marcada por experiência prática em projetos diversos — 
+                    desde sistemas de agendamento e programas de vendas até catálogos de produtos com integração a banco de dados.
+                    </p>
+                    <p class="about-description">
+                       Meu foco é construir a ponte entre interfaces modernas (frontend) e backends robustos
+                        e eficientes. Busco sempre o aprendizado contínuo e a aplicação de soluções 
+                       criativas que agreguem o máximo de valor ao usuário final.
+                    </p>
+                </div>
+
+                <div class="skills-section">
+                    <h3 class="skills-title">Minhas Tecnologias</h3>
+                    
+                    <div class="skill-category">
+                        <h4 class="category-title">🎨 Frontend</h4>
+                        <div class="category-divider"></div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                           <!-- <span class="skill-tag">Next.js</span> -->
+                            <span class="skill-tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4 class="category-title">⚙️ Backend</h4>
+                        <div class="category-divider"></div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">API REST</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4 class="category-title">🛠️ Ferramentas</h4>
+                        <div class="category-divider"></div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Postman</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Experiência -->
+    <section id="experiencia" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Experiência</h2>
+                <div class="section-line"></div>
+            </div>
+
+<div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <span class="timeline-date">2025</span>
+        <h3 class="timeline-title">Pokedex Interativa com PokeAPI</h3>
+        <p class="timeline-company">Portfólio Pessoal</p>
+        <p class="timeline-description">
+            Desenvolvimento de uma Pokedex completa e responsiva que consome a **PokeAPI** para carregar e exibir dados de Pokémon. O projeto aplica conceitos avançados de Front-End:
+            <ul>
+                <li>Consumo e mapeamento de dados utilizando funções assíncronas (`Promise.all`).</li>
+                <li>Implementação de funcionalidades de filtro por tipo, busca (nome e número) e carregamento dinâmico ("Carregar Mais").</li>
+                <li>Estruturação do código com Classes/Modelos (OOP) em JavaScript para organizar a representação dos dados de Pokémon.</li>
+                <li>Interface responsiva com um modal interativo para exibição de detalhes, estatísticas base (com barras de progresso) e habilidades de cada Pokémon.</li>
+            </ul>
+        <br>
+        </p>
+        <div class="timeline-tags">
+            <span class="timeline-tag">HTML</span>
+            <span class="timeline-tag">CSS</span>
+            <span class="timeline-tag">JavaScript</span>
+            <span class="timeline-tag">PokeAPI</span>
+            <span class="timeline-tag">Assincronismo</span>
+            <span class="timeline-tag">Web Design Responsivo</span>
+        </div>
+    </div>
+</div>
+
+ <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <span class="timeline-date">2025</span>
+        <h3 class="timeline-title">Projeto: YuGiOh-JoKenPo Edition</h3>
+        <p class="timeline-company">Portfólio Pessoal</p>
+        <p class="timeline-description">
+            Desenvolvimento de um minigame focado na aplicação da lógica de Jokenpô (Pedra-Papel-Tesoura) utilizando a temática visual de Yu-Gi-Oh!. O projeto demonstra o domínio de JavaScript puro para gerenciar todo o estado do jogo (score, áudio, cartas), implementar a lógica de duelo, controle de placar e reprodução de áudio e efeitos sonoros. O design foi construído com HTML e CSS, aplicando uma estética de interface de usuário RPG/retro (RPGUI) e cursors customizados, garantindo uma experiência interativa e imersiva.
+        </p>
+        <div class="timeline-tags">
+            <span class="timeline-tag">HTML</span>
+            <span class="timeline-tag">CSS (RPGUI)</span>
+            <span class="timeline-tag">JavaScript</span>
+            <span class="timeline-tag">Lógica de Jogo</span>
+        </div>
+    </div>
+</div>
+
+ <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <span class="timeline-date">2025</span>
+        <h3 class="timeline-title">Projeto Pessoal: Landing Page Moderna e Funcional</h3>
+        <p class="timeline-company">Portfólio Pessoal</p>
+        <p class="timeline-description">
+            Desenvolvimento de uma landing page moderna e responsiva ("ModernSite"), focada na aplicação de fundamentos e usabilidade. 
+            A página inclui navegação fixa, scroll suave e um formulário de cadastro completo. O destaque do projeto está na implementação de validação de formulário com **JavaScript puro** para campos como Nome, E-mail e Senha, garantindo a integridade dos dados e uma experiência de usuário sólida.
+        </p>
+        <div class="timeline-tags">
+            <span class="timeline-tag">HTML</span>
+            <span class="timeline-tag">CSS</span>
+            <span class="timeline-tag">JavaScript</span>
+            <span class="timeline-tag">Validação de Formulário</span>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Projetos</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./public/images/site-moderno.png" alt="Sistema de Agendamento">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ModernSite - Plataforma Completa</h3>
+                        <span class="project-badge">Projeto Acadêmico</span>
+            <p class="project-description">
+                Site moderno e responsivo desenvolvido durante a faculdade na disciplina de 
+                <strong>Programação para Internet</strong>. Focado em aplicar boas práticas de 
+                front-end com HTML, CSS e JavaScript puro.
+            </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Html</span>
+                            <span class="project-tag">Css</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+<a href="https://github.com/diegogobbisdev/modernsite-login.git" class="project-link" target="_blank" rel="noopener noreferrer">
+  Ver Projeto →
+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./public/images/Pokedex.png" alt="E-commerce">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Pokédex Interativa</h3>
+                        <p class="project-description">
+                            Desenvolvi uma Pokédex interativa com JavaScript, consumindo a PokeAPI para exibir dados dos Pokémon. 
+                            O projeto reforçou conceitos como manipulação do DOM, funções assíncronas, módulos JS e consumo de APIs REST.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Html</span>
+                            <span class="project-tag">Css</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">PokeAPI</span>
+
+                        </div>
+                        <div class="project-links">
+                           <a href="https://github.com/diegogobbisdev/Pok-dex.git" class="project-link" target="_blank" rel="noopener noreferrer">
+  Ver Projeto →
+</a>
+
+                        </div>
+                    </div>
+                </div>
+
+<div class="project-card">
+    <div class="project-image">
+        <img src="./public/images/jogo yugiho.png" alt="Miniatura do Jogo Yu-Gi-Oh! Jokenpô">
+    </div>
+    <div class="project-content">
+        <h3 class="project-title">Yu-Gi-Oh! Jokenpô Edition</h3>
+        <p class="project-description">
+            Versão inspirada no universo de Yu-Gi-Oh! para o clássico Jokenpô (Pedra, Papel e Tesoura). 
+            O jogo inclui pontuação, trilha sonora e animações de duelo.
+        </p>
+        <div class="project-tags">
+            <span class="project-tag">HTML5</span>
+            <span class="project-tag">CSS3</span>
+            <span class="project-tag">JavaScript</span>
+        </div>
+        <div class="project-links">
+                           <a href="https://github.com/diegogobbisdev/Yu-Gi-Oh-Jokenp-Edition.git" class="project-link" target="_blank" rel="noopener noreferrer">
+                             Ver Projeto →
+</a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Certificados -->
+     <section id="certificados" class="certificates">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Certificados</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <img src="./public/images/santander front-end.jpg" alt="Certificado de HTML, CSS e JavaScript" class="certificate-image">
+                    <h3 class="certificate-title">Bootcamp Santander 2025 - Front-End </h3>
+                    <p class="certificate-issuer">Emitido por Dio</p>
+                    <a href="https://www.dio.me/certificate/94BRIMX7/share" class="certificate-link" target="_blank">Ver Certificado →</a>                </div>
+
+                <div class="certificate-card">
+                    <img src="./public/images/javascritp developer.jpg" alt="Certificado de React" class="certificate-image">
+                    <h3 class="certificate-title">Formação JavaScript Developer</h3>
+                    <p class="certificate-issuer">Emitido por Dio</p>
+                    <a href="https://www.dio.me/certificate/H3RWRKST/share" class="certificate-link" target="_blank">Ver Certificado →</a>                </div>
+                <div class="certificate-card">
+                    <img src="./public/images/css web developer.jpg" alt="Certificado de React" class="certificate-image">
+                    <h3 class="certificate-title">Formação CSS Web Developer</h3>
+                    <p class="certificate-issuer">Emitido por Dio</p>
+                    <a href="https://www.dio.me/certificate/OYZ5S3IU/share" class="certificate-link" target="_blank">Ver Certificado →</a>                </div>
+                <div class="certificate-card">
+                    <img src="./public/images/html developer.jpg" alt="Certificado de React" class="certificate-image">
+                    <h3 class="certificate-title">Formação HTML Web Developer</h3>
+                    <p class="certificate-issuer">Emitido por Dio</p>
+                    <a href="https://www.dio.me/certificate/XLLMQ3RY/share" class="certificate-link" target="_blank">Ver Certificado →</a>                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Contato</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-title">Vamos trabalhar juntos?</h3>
+                    <p class="contact-description">
+                        Estou sempre aberto a discutir novos projetos, ideias criativas ou 
+                        oportunidades para fazer parte da sua visão.
+                    </p>
+
+                    <div class="contact-methods">
+                        <a href="mailto:contato@diegogobbis.com" class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">diegogobbisdev@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/diegogobbis/" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">linkedin.com/in/diegogobbis</span>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/diegogobbisdev" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">GitHub</span>
+                                <span class="contact-value">github.com/diegogobbis</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="whatsappForm">
+    <div class="form-group">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name">
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+    </div>
+    <div class="form-group">
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+</form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">Desenvolvido por Diego Gobbis © 2025</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
