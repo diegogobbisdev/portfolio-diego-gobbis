@@ -7,7 +7,7 @@ if (canvas && ctx) {
   canvas.height = window.innerHeight
 
   const particles = []
-  const particleCount = 100
+  const particleCount = window.innerWidth <= 768 ? 50 : 100
   const mouse = { x: null, y: null, radius: 150 }
 
   class Particle {
@@ -70,6 +70,8 @@ if (canvas && ctx) {
     }
   }
 
+  let animationId
+
   function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
 
@@ -79,10 +81,18 @@ if (canvas && ctx) {
     })
 
     connectParticles()
-    requestAnimationFrame(animate)
+    animationId = requestAnimationFrame(animate)
   }
 
   animate()
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      cancelAnimationFrame(animationId)
+    } else {
+      animate()
+    }
+  })
 
   window.addEventListener("mousemove", (e) => {
     mouse.x = e.clientX
@@ -273,27 +283,6 @@ window.addEventListener("scroll", () => {
     }
   })
 }, { passive: true })
-
-// Efeito de digitacao
-const typingText = document.querySelector(".typing-text")
-const text = "Diego Gobbis"
-let index = 0
-
-function type() {
-  if (!typingText) return
-
-  if (index < text.length) {
-    typingText.textContent = text.slice(0, index + 1)
-    index++
-    setTimeout(type, 150)
-  } else {
-    setTimeout(() => {
-      typingText.style.borderRight = "none"
-    }, 500)
-  }
-}
-
-setTimeout(type, 500)
 
 // Animacao de reveal ao rolar a pagina
 const reveals = document.querySelectorAll(".timeline-item, .project-card, .skill-category, .certificate-card")

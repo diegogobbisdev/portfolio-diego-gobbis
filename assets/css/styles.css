@@ -182,7 +182,12 @@ button:focus-visible,
 .typing-text {
   display: inline-block;
   border-right: 3px solid var(--accent);
-  animation: blink 0.7s infinite;
+  animation: typing 1.5s steps(12, end) 0.3s both, blink 0.7s 2s infinite;
+}
+
+@keyframes typing {
+  from { clip-path: inset(0 100% 0 0); }
+  to { clip-path: inset(0 0 0 0); }
 }
 
 @keyframes blink {
@@ -213,6 +218,7 @@ button:focus-visible,
   display: flex;
   gap: 1.5rem;
   margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -242,6 +248,16 @@ button:focus-visible,
 .btn-secondary:hover {
   background: var(--accent);
   color: var(--background);
+}
+
+.btn-cv {
+  border: 2px solid var(--text-muted);
+  color: var(--text-muted);
+}
+
+.btn-cv:hover {
+  border-color: var(--text);
+  color: var(--text);
 }
 
 .hero-social {
@@ -674,6 +690,13 @@ section {
   color: var(--accent);
 }
 
+.project-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .project-link {
   color: var(--accent);
   text-decoration: none;
@@ -682,7 +705,34 @@ section {
 }
 
 .project-link:hover {
-  gap: 0.5rem;
+  opacity: 0.8;
+}
+
+.project-link-demo {
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 20px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.project-link-demo:hover {
+  background: var(--accent);
+  color: var(--background);
+}
+
+.project-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background: rgba(0, 102, 204, 0.15);
+  border: 1px solid var(--primary);
+  border-radius: 15px;
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
 }
 
 /* Secao de contato */

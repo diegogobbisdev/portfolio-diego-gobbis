@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego Gobbis - Desenvolvedor Front-End</title>
+    <meta name="description" content="Diego Gobbis - Desenvolvedor Front-End. Portfólio com projetos em JavaScript, HTML, CSS e consumo de APIs REST.">
+    <meta property="og:title" content="Diego Gobbis - Desenvolvedor Front-End">
+    <meta property="og:description" content="Portfólio com projetos em JavaScript, HTML, CSS e consumo de APIs REST. Estudante de Sistemas de Informação na UEMG.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/images/profile.jpg">
+    <link rel="icon" href="./assets/images/profile.jpg" type="image/jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -23,7 +29,7 @@
             <ul class="nav-menu">
                 <li><a href="#inicio" class="nav-link">Início</a></li>
                 <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+                <li><a href="#experiencia" class="nav-link">Trajetória</a></li>
                 <li><a href="#projetos" class="nav-link">Projetos</a></li>
                 <li><a href="#certificados" class="nav-link">Certificados</a></li>
                 <li><a href="#contato" class="nav-link">Contato</a></li>
@@ -47,10 +53,12 @@
                     </h1>
                     <h2 class="hero-title">Desenvolvedor Front-End</h2>
                     <p class="hero-description">
-                        Sou desenvolvedor Front-End focado em criar interfaces claras, rápidas e intuitivas. Utilizo HTML, CSS e JavaScript para transformar ideias em experiências digitais funcionais, bem estruturadas e centradas no usuário.    </p>
+                        Já desenvolvi mais de 6 projetos com JavaScript puro — de jogos interativos com lógica de estado a aplicações com consumo de APIs REST e Firebase. Estudante de Sistemas de Informação na UEMG, com foco em código limpo, responsividade e acessibilidade.
+                    </p>
                     <div class="hero-buttons">
                         <a href="#projetos" class="btn btn-primary">✨ Ver Projetos</a>
                         <a href="#contato" class="btn btn-secondary">Entrar em Contato</a>
+                        <a href="./assets/files/curriculo.pdf" class="btn btn-cv" download aria-label="Baixar currículo em PDF">📄 Baixar CV</a>
                     </div>
                     <div class="hero-social">
                         <a href="https://github.com/diegogobbisdev" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
@@ -146,7 +154,7 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-number">02</span>
-                <h2 class="section-title">Experiência</h2>
+                <h2 class="section-title">Trajetória</h2>
                 <div class="section-line"></div>
             </div>
 
@@ -157,6 +165,34 @@
 </div>
 
 <div class="timeline carousel-mode" id="experience-carousel">
+
+<div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <span class="timeline-date">2026</span>
+        <h3 class="timeline-title">Controle de Caixa</h3>
+        <p class="timeline-company">Projeto Profissional</p>
+        <p class="timeline-description">
+            Sistema web de controle financeiro desenvolvido para resolver um problema real na empresa onde trabalho.
+            O processo de fechamento de caixa era feito manualmente e apresentava erros frequentes; o controle de cheques pré-datados era uma planilha desorganizada com perda de dados.
+            Desenvolvi uma solução integrada que centraliza tudo em um único sistema, sem necessidade de servidor ou instalação.
+        </p>
+        <ul class="timeline-list">
+            <li>Fechamento de caixa diário com autenticação por usuário e histórico de sessões.</li>
+            <li>Controle de cheques pré-datados com alertas de vencimento e registro de depósitos.</li>
+            <li>Geração de relatórios formatados para impressão.</li>
+            <li>Dados persistidos no navegador via LocalStorage — sem banco de dados externo.</li>
+        </ul>
+        <div class="timeline-tags">
+            <span class="timeline-tag">HTML5</span>
+            <span class="timeline-tag">CSS3</span>
+            <span class="timeline-tag">JavaScript</span>
+            <span class="timeline-tag">LocalStorage</span>
+            <span class="timeline-tag">Autenticação</span>
+            <span class="timeline-tag">Relatórios</span>
+        </div>
+    </div>
+</div>
 
 <div class="timeline-item">
     <div class="timeline-dot"></div>
@@ -185,54 +221,6 @@
 <div class="timeline-item">
     <div class="timeline-dot"></div>
     <div class="timeline-content">
-        <span class="timeline-date">2026</span>
-        <h3 class="timeline-title">Spider-Man Multiverses</h3>
-        <p class="timeline-company">Portfólio Pessoal</p>
-        <p class="timeline-description">
-            Projeto front-end temático do Homem-Aranha, com home em carrossel 3D e páginas internas por fase cinematográfica.
-        </p>
-        <ul class="timeline-list">
-            <li>Navegação real entre páginas e carregamento do JavaScript com defer.</li>
-            <li>Melhorias de acessibilidade com aria-label, lang pt-BR e foco visível.</li>
-            <li>Controles do carrossel convertidos para button com navegação por teclado.</li>
-            <li>Responsividade refinada para breakpoints de 900px e 600px.</li>
-        </ul>
-        <div class="timeline-tags">
-            <span class="timeline-tag">HTML5</span>
-            <span class="timeline-tag">CSS3</span>
-            <span class="timeline-tag">JavaScript (Vanilla)</span>
-            <span class="timeline-tag">Acessibilidade</span>
-        </div>
-    </div>
-</div>
-
-<div class="timeline-item">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-        <span class="timeline-date">2026</span>
-        <h3 class="timeline-title">Mundo Invertido</h3>
-        <p class="timeline-company">Portfólio Pessoal</p>
-        <p class="timeline-description">
-            Landing page inspirada em Stranger Things com alternância entre tema claro/escuro e troca dinâmica de trilha sonora.
-        </p>
-        <ul class="timeline-list">
-            <li>Melhorias de acessibilidade no formulário e associação correta entre label e campos.</li>
-            <li>Correção da estrutura HTML e organização dos assets de CSS, imagens e áudios.</li>
-            <li>Script de alternância entre mundo normal e mundo invertido com feedback visual.</li>
-            <li>Estilização responsiva para melhorar a experiência em telas menores.</li>
-        </ul>
-        <div class="timeline-tags">
-            <span class="timeline-tag">HTML5</span>
-            <span class="timeline-tag">CSS3</span>
-            <span class="timeline-tag">JavaScript</span>
-            <span class="timeline-tag">Tema Dinamico</span>
-        </div>
-    </div>
-</div>
-
-<div class="timeline-item">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
         <span class="timeline-date">2025</span>
         <h3 class="timeline-title">Pokédex Interativa com PokeAPI</h3>
         <p class="timeline-company">Portfólio Pessoal</p>
@@ -252,25 +240,6 @@
             <span class="timeline-tag">PokeAPI</span>
             <span class="timeline-tag">Assincronismo</span>
             <span class="timeline-tag">Web Design Responsivo</span>
-        </div>
-    </div>
-</div>
-
- <div class="timeline-item">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-        <span class="timeline-date">2025</span>
-        <h3 class="timeline-title">Projeto: Yu-Gi-Oh! Jokenpô Edition</h3>
-        <p class="timeline-company">Portfólio Pessoal</p>
-        <p class="timeline-description">
-            Minigame inspirado em Yu-Gi-Oh! com mecânica de Jokenpô (Pedra, Papel e Tesoura).
-            O projeto foi feito com JavaScript puro para controlar estado de partida, placar, áudio e lógica de duelo.
-        </p>
-        <div class="timeline-tags">
-            <span class="timeline-tag">HTML</span>
-            <span class="timeline-tag">CSS (RPGUI)</span>
-            <span class="timeline-tag">JavaScript</span>
-            <span class="timeline-tag">Lógica de Jogo</span>
         </div>
     </div>
 </div>
@@ -315,6 +284,32 @@
             <div class="projects-grid carousel-mode" id="projects-carousel">
                 <div class="project-card">
                     <div class="project-image">
+                        <img src="./assets/images/controle-caixa.png" alt="Sistema de Controle de Caixa">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Controle de Caixa</h3>
+                        <span class="project-badge">Projeto Profissional</span>
+                        <p class="project-description">
+                            Sistema web completo de controle financeiro desenvolvido para a empresa onde trabalho.
+                            Centraliza o fechamento de caixa diário, o controle de cheques pré-datados e alertas de vencimento
+                            — com autenticação por usuário, histórico de sessões e geração de relatórios para impressão.
+                            Roda direto no navegador, sem servidor ou instalação.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">LocalStorage</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/diegogobbisdev/controledecaixa" class="project-link" target="_blank" rel="noopener noreferrer">Ver Projeto →</a>
+                            <a href="https://controledecaixa-eight.vercel.app/" class="project-link-demo" target="_blank" rel="noopener noreferrer">Ver Demo →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
                         <img src="./assets/images/site-moderno.png" alt="Sistema de Agendamento">
                     </div>
                     <div class="project-content">
@@ -330,9 +325,8 @@
                             <span class="project-tag">JavaScript</span>
                         </div>
                         <div class="project-links">
-<a href="https://github.com/diegogobbisdev/modernsite-login.git" class="project-link" target="_blank" rel="noopener noreferrer">
-  Ver Projeto →
-</a>
+                            <a href="https://github.com/diegogobbisdev/modernsite-login.git" class="project-link" target="_blank" rel="noopener noreferrer">Ver Projeto →</a>
+                            <a href="#" class="project-link-demo" target="_blank" rel="noopener noreferrer">Ver Demo →</a>
                         </div>
                     </div>
                 </div>
@@ -355,36 +349,11 @@
 
                         </div>
                         <div class="project-links">
-                           <a href="https://github.com/diegogobbisdev/Pok-dex.git" class="project-link" target="_blank" rel="noopener noreferrer">
-  Ver Projeto →
-</a>
-
+                            <a href="https://github.com/diegogobbisdev/Pok-dex.git" class="project-link" target="_blank" rel="noopener noreferrer">Ver Projeto →</a>
+                            <a href="#" class="project-link-demo" target="_blank" rel="noopener noreferrer">Ver Demo →</a>
                         </div>
                     </div>
                 </div>
-
-<div class="project-card">
-    <div class="project-image">
-        <img src="./assets/images/jogo yugiho.png" alt="Miniatura do jogo Yu-Gi-Oh! Jokenpô">
-    </div>
-    <div class="project-content">
-        <h3 class="project-title">Yu-Gi-Oh! Jokenpô Edition</h3>
-        <p class="project-description">
-            Versão inspirada no universo de Yu-Gi-Oh! para o clássico Jokenpô (Pedra, Papel e Tesoura). 
-            O jogo inclui pontuação, trilha sonora e animações de duelo.
-        </p>
-        <div class="project-tags">
-            <span class="project-tag">HTML5</span>
-            <span class="project-tag">CSS3</span>
-            <span class="project-tag">JavaScript</span>
-        </div>
-        <div class="project-links">
-                           <a href="https://github.com/diegogobbisdev/Yu-Gi-Oh-Jokenp-Edition.git" class="project-link" target="_blank" rel="noopener noreferrer">
-                             Ver Projeto →
-</a>
-        </div>
-    </div>
-</div>
 
 <div class="project-card">
     <div class="project-image">
@@ -403,60 +372,12 @@
             <span class="project-tag">Lógica de Jogo</span>
         </div>
         <div class="project-links">
-            <a href="https://github.com/diegogobbisdev/jogo-da-memoria-javascript" class="project-link" target="_blank" rel="noopener noreferrer">
-                Ver Projeto →
-            </a>
+            <a href="https://github.com/diegogobbisdev/jogo-da-memoria-javascript" class="project-link" target="_blank" rel="noopener noreferrer">Ver Projeto →</a>
+            <a href="#" class="project-link-demo" target="_blank" rel="noopener noreferrer">Ver Demo →</a>
         </div>
     </div>
 </div>
 
-<div class="project-card">
-    <div class="project-image">
-        <img src="./assets/images/landin page spider man multiverse.png" alt="Projeto Spider-Man Multiverses">
-    </div>
-    <div class="project-content">
-        <h3 class="project-title">Spider-Man Multiverses</h3>
-        <p class="project-description">
-            Projeto front-end temático do Homem-Aranha com home em carrossel 3D e páginas por fase cinematográfica.
-            Recebeu melhorias de acessibilidade, navegação por teclado, responsividade e otimização de carregamento.
-        </p>
-        <div class="project-tags">
-            <span class="project-tag">HTML5</span>
-            <span class="project-tag">CSS3</span>
-            <span class="project-tag">JavaScript (Vanilla)</span>
-            <span class="project-tag">Fancybox</span>
-        </div>
-        <div class="project-links">
-            <a href="https://github.com/diegogobbisdev/spider-man-multiverses" class="project-link" target="_blank" rel="noopener noreferrer">
-                Ver Projeto →
-            </a>
-        </div>
-    </div>
-</div>
-
-<div class="project-card">
-    <div class="project-image">
-        <img src="./assets/images/mundo invertido landing page.png" alt="Projeto Mundo Invertido">
-    </div>
-    <div class="project-content">
-        <h3 class="project-title">Mundo Invertido</h3>
-        <p class="project-description">
-            Landing page inspirada em Stranger Things com alternância de tema claro/escuro e troca de trilha sonora.
-            Projeto com ajustes de acessibilidade no formulário, estrutura HTML corrigida e base responsiva.
-        </p>
-        <div class="project-tags">
-            <span class="project-tag">HTML5</span>
-            <span class="project-tag">CSS3</span>
-            <span class="project-tag">JavaScript</span>
-            <span class="project-tag">Tema Dinâmico</span>
-        </div>
-        <div class="project-links">
-            <a href="https://github.com/diegogobbisdev/Landing-Page-no-Mundo-Invertido" class="project-link" target="_blank" rel="noopener noreferrer">
-                Ver Projeto →
-            </a>
-        </div>
-    </div>
-</div>
             </div>
         </div>
     </section>
@@ -588,7 +509,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="footer-text">Desenvolvido por Diego Gobbis © 2025</p>
+            <p class="footer-text">Desenvolvido por Diego Gobbis © 2026</p>
         </div>
     </footer>
 
