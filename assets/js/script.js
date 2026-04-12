@@ -1,3 +1,20 @@
+// Efeito de digitacao no nome da hero
+const typingEl = document.querySelector('.typing-text')
+if (typingEl) {
+  const textoCompleto = typingEl.textContent.trim()
+  typingEl.textContent = ''
+  typingEl.classList.add('cursor-ativo')
+  let i = 0
+  const digitar = () => {
+    if (i < textoCompleto.length) {
+      typingEl.textContent += textoCompleto[i]
+      i++
+      setTimeout(digitar, 110)
+    }
+  }
+  setTimeout(digitar, 400)
+}
+
 // Animacao de rede no canvas de fundo
 const canvas = document.getElementById("neural-network")
 const ctx = canvas ? canvas.getContext("2d") : null
