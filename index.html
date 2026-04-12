@@ -47,18 +47,18 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <p class="hero-greeting">👋 Olá, eu sou</p>
+                    <p class="hero-greeting"> Olá, eu sou</p>
                     <h1 class="hero-name">
                         <span class="typing-text">Diego Gobbis</span>
                     </h1>
                     <h2 class="hero-title">Desenvolvedor Front-End</h2>
                     <p class="hero-description">
-                        Já desenvolvi mais de 6 projetos com JavaScript puro — de jogos interativos com lógica de estado a aplicações com consumo de APIs REST e Firebase. Estudante de Sistemas de Informação na UEMG, com foco em código limpo, responsividade e acessibilidade.
+                        Transformo ideias em interfaces que funcionam de verdade. Cada projeto que entrego tem propósito, atenção aos detalhes e código que sustenta o que promete.
                     </p>
                     <div class="hero-buttons">
                         <a href="#projetos" class="btn btn-primary">✨ Ver Projetos</a>
                         <a href="#contato" class="btn btn-secondary">Entrar em Contato</a>
-                        <a href="./assets/files/curriculo.pdf" class="btn btn-cv" download aria-label="Baixar currículo em PDF">📄 Baixar CV</a>
+                        <a href="./curriculo.html" class="btn btn-cv" target="_blank" aria-label="Ver currículo">📄 Ver CV</a>
                     </div>
                     <div class="hero-social">
                         <a href="https://github.com/diegogobbisdev" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
@@ -170,6 +170,32 @@
     <div class="timeline-dot"></div>
     <div class="timeline-content">
         <span class="timeline-date">2026</span>
+        <h3 class="timeline-title">Landing Page JoiÓtica</h3>
+        <p class="timeline-company">Primeira Landing Page Oficial</p>
+        <p class="timeline-description">
+            Minha primeira landing page oficial como desenvolvedor, criada para uma joalheria e ótica.
+            Projeto completo com catálogo interativo, menu mobile e identidade visual consistente.
+        </p>
+        <ul class="timeline-list">
+            <li>Catálogo com 4 categorias e painéis de marcas controlados via JavaScript (toggleCategoria).</li>
+            <li>Menu mobile deslizante lateral com overlay e bloqueio de scroll.</li>
+            <li>CSS organizado com variáveis customizadas e layout responsivo em 3 breakpoints.</li>
+            <li>CTA direto via WhatsApp e suporte a safe-area do iPhone.</li>
+        </ul>
+        <div class="timeline-tags">
+            <span class="timeline-tag">HTML5</span>
+            <span class="timeline-tag">CSS3</span>
+            <span class="timeline-tag">JavaScript</span>
+            <span class="timeline-tag">Responsivo</span>
+            <span class="timeline-tag">Landing Page</span>
+        </div>
+    </div>
+</div>
+
+<div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <span class="timeline-date">2026</span>
         <h3 class="timeline-title">Controle de Caixa</h3>
         <p class="timeline-company">Projeto Profissional</p>
         <p class="timeline-description">
@@ -190,56 +216,6 @@
             <span class="timeline-tag">LocalStorage</span>
             <span class="timeline-tag">Autenticação</span>
             <span class="timeline-tag">Relatórios</span>
-        </div>
-    </div>
-</div>
-
-<div class="timeline-item">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-        <span class="timeline-date">2026</span>
-        <h3 class="timeline-title">Memória Selvagem</h3>
-        <p class="timeline-company">Portfólio Pessoal</p>
-        <p class="timeline-description">
-            Jogo da memória criado em JavaScript puro, com identidade visual própria e foco em jogabilidade rápida.
-        </p>
-        <ul class="timeline-list">
-            <li>Implementação de placar com contador de jogadas e cronômetro de partida.</li>
-            <li>Botão de nova partida sem recarregar a página, com reset mais fluido.</li>
-            <li>Ajuste de lógica para impedir clique duplicado na mesma carta.</li>
-            <li>Tema tropical/noturno com interface personalizada e responsiva.</li>
-        </ul>
-        <div class="timeline-tags">
-            <span class="timeline-tag">HTML5</span>
-            <span class="timeline-tag">CSS3</span>
-            <span class="timeline-tag">JavaScript (Vanilla)</span>
-            <span class="timeline-tag">Game UI</span>
-        </div>
-    </div>
-</div>
-
-<div class="timeline-item">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-        <span class="timeline-date">2025</span>
-        <h3 class="timeline-title">Pokédex Interativa com PokeAPI</h3>
-        <p class="timeline-company">Portfólio Pessoal</p>
-        <p class="timeline-description">
-            Pokédex responsiva com consumo da PokeAPI para carregar e exibir dados dos Pokémon em tempo real.
-        </p>
-        <ul class="timeline-list">
-            <li>Consumo e mapeamento de dados com funções assíncronas e Promise.all.</li>
-            <li>Implementação de filtros por tipo, busca por nome/número e carregamento dinâmico.</li>
-            <li>Estruturação com classes/modelos em JavaScript para organizar dados de Pokémon.</li>
-            <li>Interface responsiva com modal de detalhes, estatísticas base e habilidades.</li>
-        </ul>
-        <div class="timeline-tags">
-            <span class="timeline-tag">HTML</span>
-            <span class="timeline-tag">CSS</span>
-            <span class="timeline-tag">JavaScript</span>
-            <span class="timeline-tag">PokeAPI</span>
-            <span class="timeline-tag">Assincronismo</span>
-            <span class="timeline-tag">Web Design Responsivo</span>
         </div>
     </div>
 </div>
@@ -284,6 +260,31 @@
             <div class="projects-grid carousel-mode" id="projects-carousel">
                 <div class="project-card">
                     <div class="project-image">
+                        <img src="./assets/images/joiotica.png" alt="Landing Page JoiÓtica">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Landing Page JoiÓtica</h3>
+                        <span class="project-badge">Primeira Landing Page Oficial</span>
+                        <p class="project-description">
+                            Minha primeira landing page oficial como desenvolvedor. Criada para uma joalheria e ótica,
+                            apresenta catálogo interativo com painéis por categoria, menu mobile deslizante,
+                            seção de diferenciais e CTA direto via WhatsApp — tudo com CSS organizado em variáveis e layout responsivo.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Responsivo</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/diegogobbisdev/Landing-Page-JoiOtica" class="project-link-demo" target="_blank" rel="noopener noreferrer">→ Ver Projeto</a>
+                            <a href="https://landing-page-joiotica.vercel.app/" class="project-link-demo" target="_blank" rel="noopener noreferrer">→ Ver Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
                         <img src="./assets/images/controle-caixa.png" alt="Sistema de Controle de Caixa">
                     </div>
                     <div class="project-content">
@@ -302,8 +303,8 @@
                             <span class="project-tag">LocalStorage</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/diegogobbisdev/controledecaixa" class="project-link" target="_blank" rel="noopener noreferrer">Ver Projeto →</a>
-                            <a href="https://controledecaixa-eight.vercel.app/" class="project-link-demo" target="_blank" rel="noopener noreferrer">Ver Demo →</a>
+                            <a href="https://github.com/diegogobbisdev/controledecaixa" class="project-link-demo" target="_blank" rel="noopener noreferrer">→ Ver Projeto</a>
+                            <a href="https://controledecaixa-eight.vercel.app/" class="project-link-demo" target="_blank" rel="noopener noreferrer">→ Ver Demo</a>
                         </div>
                     </div>
                 </div>
@@ -325,58 +326,12 @@
                             <span class="project-tag">JavaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/diegogobbisdev/modernsite-login.git" class="project-link" target="_blank" rel="noopener noreferrer">Ver Projeto →</a>
-                            <a href="#" class="project-link-demo" target="_blank" rel="noopener noreferrer">Ver Demo →</a>
+                            <a href="https://github.com/diegogobbisdev/modernsite-login.git" class="project-link-demo" target="_blank" rel="noopener noreferrer">→ Ver Projeto</a>
+                            <a href="#" class="project-link-demo" target="_blank" rel="noopener noreferrer">→ Ver Demo</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./assets/images/Pokedex.png" alt="Projeto Pokédex Interativa">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Pokédex Interativa</h3>
-                        <p class="project-description">
-                            Desenvolvi uma Pokédex interativa com JavaScript, consumindo a PokeAPI para exibir dados dos Pokémon. 
-                            O projeto reforçou conceitos como manipulação do DOM, funções assíncronas, módulos JS e consumo de APIs REST.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag">HTML</span>
-                            <span class="project-tag">CSS</span>
-                            <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">PokeAPI</span>
-
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/diegogobbisdev/Pok-dex.git" class="project-link" target="_blank" rel="noopener noreferrer">Ver Projeto →</a>
-                            <a href="#" class="project-link-demo" target="_blank" rel="noopener noreferrer">Ver Demo →</a>
-                        </div>
-                    </div>
-                </div>
-
-<div class="project-card">
-    <div class="project-image">
-        <img src="./assets/images/jogo da memoria emoji.png" alt="Projeto Memória Selvagem">
-    </div>
-    <div class="project-content">
-        <h3 class="project-title">Memória Selvagem</h3>
-        <p class="project-description">
-            Jogo da memória com JavaScript puro, cartas de emojis e interface personalizada. Inclui tema tropical/noturno,
-            contador de jogadas, cronômetro, botão de nova partida sem recarregar e ajuste de lógica para evitar clique duplicado.
-        </p>
-        <div class="project-tags">
-            <span class="project-tag">HTML5</span>
-            <span class="project-tag">CSS3</span>
-            <span class="project-tag">JavaScript (Vanilla)</span>
-            <span class="project-tag">Lógica de Jogo</span>
-        </div>
-        <div class="project-links">
-            <a href="https://github.com/diegogobbisdev/jogo-da-memoria-javascript" class="project-link" target="_blank" rel="noopener noreferrer">Ver Projeto →</a>
-            <a href="#" class="project-link-demo" target="_blank" rel="noopener noreferrer">Ver Demo →</a>
-        </div>
-    </div>
-</div>
 
             </div>
         </div>

@@ -223,7 +223,7 @@ initCardCarousel({
   getItemsPerPage: () => (window.innerWidth <= 900 ? 1 : 2),
 })
 
-// Carrossel de projetos (3 cards por pagina no desktop)
+// Carrossel de projetos (2 cards por pagina no desktop)
 initCardCarousel({
   containerSelector: "#projects-carousel",
   itemSelector: ".project-card",
@@ -232,8 +232,7 @@ initCardCarousel({
   indicatorSelector: ".projects-indicator",
   getItemsPerPage: () => {
     if (window.innerWidth <= 600) return 1
-    if (window.innerWidth <= 1100) return 2
-    return 3
+    return 2
   },
 })
 

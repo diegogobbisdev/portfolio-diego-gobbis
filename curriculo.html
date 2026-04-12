@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo — Diego Gobbis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/curriculo.css">
+</head>
+<body>
+<div class="page">
+
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="header-text">
+      <h1>Diego Antonio Gobbis Da Silva</h1>
+      <p class="tagline">Desenvolvedor Front-End · Em busca da 1ª vaga</p>
+      <div class="contacts">
+        <span><i class="icon">✉</i> diegogobbisdev@gmail.com</span>
+        <span><i class="icon">☎</i> (34) 99766-6593</span>
+        <a href="https://linkedin.com/in/diegogobbis" target="_blank"><i class="icon">in</i> linkedin.com/in/diegogobbis</a>
+        <a href="https://github.com/diegogobbisdev" target="_blank"><i class="icon">gh</i> github.com/diegogobbisdev</a>
+        <span><i class="icon">◎</i> Ituiutaba, MG — Brasil</span>
+      </div>
+    </div>
+    <div class="photo-wrap">
+      <img src="./assets/images/profile.jpg" alt="Diego Gobbis">
+    </div>
+  </header>
+
+  <div class="body">
+
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+
+      <div class="sidebar-section">
+        <p class="sidebar-title">Habilidades</p>
+
+        <div class="skill-group">
+          <p class="skill-group-label">Frontend</p>
+          <span class="skill-chip">HTML5</span>
+          <span class="skill-chip">CSS3</span>
+          <span class="skill-chip">Flexbox</span>
+          <span class="skill-chip">Grid</span>
+          <span class="skill-chip">Responsivo</span>
+          <span class="skill-chip">JavaScript ES6+</span>
+          <span class="skill-chip">Tailwind CSS</span>
+          <span class="skill-chip">React ↗</span>
+        </div>
+
+        <div class="skill-group">
+          <p class="skill-group-label">Dados & Integração</p>
+          <span class="skill-chip">APIs REST</span>
+          <span class="skill-chip">Fetch / Async</span>
+          <span class="skill-chip">JSON</span>
+          <span class="skill-chip">Firebase</span>
+          <span class="skill-chip">LocalStorage</span>
+        </div>
+
+        <div class="skill-group">
+          <p class="skill-group-label">Ferramentas</p>
+          <span class="skill-chip">Git & GitHub</span>
+          <span class="skill-chip">VS Code</span>
+          <span class="skill-chip">Figma</span>
+          <span class="skill-chip">Postman</span>
+          <span class="skill-chip">Vercel</span>
+          <span class="skill-chip">Vite</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <p class="sidebar-title">Formação</p>
+        <p class="edu-title">Gestão de Sistemas de Informação</p>
+        <p class="edu-inst">UEMG – Ituiutaba</p>
+        <p class="edu-detail">7º semestre · Conclusão 2026</p>
+        <p class="edu-detail" style="margin-top:8px;">TCC: aplicação web fullstack de gestão de estudos (React + IndexedDB)</p>
+      </div>
+
+      <div class="sidebar-section">
+        <p class="sidebar-title">Certificados</p>
+        <div class="cert-item">
+          Bootcamp Front-End 2025
+          <div class="cert-org">Santander / DIO</div>
+        </div>
+        <div class="cert-item">
+          Formação JavaScript Developer
+          <div class="cert-org">DIO</div>
+        </div>
+        <div class="cert-item">
+          Formação CSS Web Developer
+          <div class="cert-org">DIO</div>
+        </div>
+        <div class="cert-item">
+          Ri Happy – Front-End do Zero
+          <div class="cert-org">DIO</div>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="main">
+
+      <section class="section">
+        <h2 class="section-title">Sobre mim</h2>
+        <p class="resumo-text">
+          Desenvolvedor Front-End com experiência prática na construção de aplicações web reais — de sistemas financeiros
+          a ferramentas de produtividade. Meu diferencial está em projetos com impacto real: desenvolvi um sistema de
+          controle de caixa completo (autenticação, histórico, relatórios) em JavaScript puro, adotado na empresa onde
+          trabalho. Tenho sólida base em HTML, CSS responsivo, JavaScript ES6+ e consumo de APIs REST, e estou em
+          evolução consistente com React. Busco minha primeira oportunidade como desenvolvedor Front-End para crescer
+          dentro de um time e contribuir com código de qualidade.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Projetos</h2>
+
+        <div class="projeto">
+          <div class="projeto-header">
+            <span class="projeto-name">Controle de Caixa — Sistema Financeiro Interno</span>
+            <div class="projeto-links">
+              <a href="https://github.com/diegogobbisdev/controledecaixa" target="_blank">Repositório</a>
+              <a href="https://controledecaixa-eight.vercel.app/" target="_blank">Demo</a>
+            </div>
+          </div>
+          <div class="projeto-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">LocalStorage</span>
+            <span class="tag">Auth</span>
+          </div>
+          <ul class="projeto-bullets">
+            <li>Sistema web real, desenvolvido e adotado na empresa JoiÓtica para fechar o caixa diário com zero erros manuais.</li>
+            <li>Autenticação por usuário, isolamento de sessões, controle de cheques pré-datados com alertas de vencimento e geração de relatórios para impressão.</li>
+            <li>Funciona offline, direto no navegador — sem servidor ou instalação.</li>
+          </ul>
+        </div>
+
+        <div class="projeto">
+          <div class="projeto-header">
+            <span class="projeto-name">Landing Page — JoiÓtica</span>
+            <div class="projeto-links">
+              <a href="https://github.com/diegogobbisdev/Landing-Page-JoiOtica" target="_blank">Repositório</a>
+              <a href="https://landing-page-joiotica.vercel.app/" target="_blank">Demo</a>
+            </div>
+          </div>
+          <div class="projeto-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Responsivo</span>
+          </div>
+          <ul class="projeto-bullets">
+            <li>Primeira landing page oficial como desenvolvedor, criada para uma joalheria e ótica real.</li>
+            <li>Catálogo interativo com 4 categorias controladas via JavaScript, menu mobile deslizante, CSS com variáveis customizadas e 3 breakpoints responsivos.</li>
+          </ul>
+        </div>
+
+        <div class="projeto">
+          <div class="projeto-header">
+            <span class="projeto-name">Estuda Fácil — TCC (em desenvolvimento)</span>
+          </div>
+          <div class="projeto-tags">
+            <span class="tag">React</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">IndexedDB</span>
+            <span class="tag">Zustand</span>
+            <span class="tag">Vite</span>
+          </div>
+          <ul class="projeto-bullets">
+            <li>Aplicação web fullstack de gestão de estudos em desenvolvimento como TCC na UEMG.</li>
+            <li>Stack moderna: React 19, Tailwind CSS v4, Zustand, IndexedDB com autenticação local (SHA-256) e React Router.</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Experiência</h2>
+
+        <div class="exp-header">
+          <span class="exp-role">Vendedor &amp; Desenvolvedor Interno</span>
+          <span class="exp-period">Nov 2014 — Presente</span>
+        </div>
+        <p class="exp-company">JoiÓtica · Ituiutaba, MG</p>
+        <ul class="exp-bullets">
+          <li>Desenvolveu internamente um sistema web de controle de caixa que eliminou erros manuais no fechamento diário, ainda em uso na empresa.</li>
+          <li>Criou a landing page oficial da loja com catálogo interativo e layout responsivo.</li>
+          <li>Atendimento ao cliente e assessoria na escolha de óculos, joias e relógios.</li>
+          <li>Realizando estágio curricular na área de TI da empresa (iniciado em abril/2026).</li>
+        </ul>
+      </section>
+
+    </main>
+  </div>
+
+  <div class="footer-strip">
+    <span>Diego Antonio Gobbis · Desenvolvedor Front-End</span>
+    <span>diegogobbisdev@gmail.com · (34) 99766-6593</span>
+  </div>
+
+</div>
+
+<button class="print-btn">Imprimir / Salvar PDF</button>
+
+<script src="assets/js/curriculo.js"></script>
+</body>
+</html>
